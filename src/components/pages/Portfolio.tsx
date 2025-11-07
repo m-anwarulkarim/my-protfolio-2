@@ -15,7 +15,7 @@ const allProjects: Project[] = [
     image: "/images/ab-seed.png",
     link: "https://ab-seed.vercel.app/",
     category: "Full Stack",
-    tech: ["Next.js", "TailwindCSS", "MongoDB", "Express"],
+    tech: ["react", "TailwindCSS", "typscript"],
   },
   {
     title: "Library",
@@ -29,7 +29,7 @@ const allProjects: Project[] = [
     image: "/images/ecommerce.png",
     link: "https://e-commers-phi-roan.vercel.app/",
     category: "Full Stack",
-    tech: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS"],
+    tech: ["HTML", "React", "TailwindCSS", "RTK query"],
   },
   {
     title: "Portfolio Website ",
