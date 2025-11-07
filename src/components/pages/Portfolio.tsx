@@ -6,6 +6,7 @@ interface Project {
   image: string;
   link: string;
   category: string;
+  tech: string[]; // 🆕 Tech Stack field
 }
 
 const allProjects: Project[] = [
@@ -14,36 +15,49 @@ const allProjects: Project[] = [
     image: "/images/ab-seed.png",
     link: "https://ab-seed.vercel.app/",
     category: "Full Stack",
+    tech: ["Next.js", "TailwindCSS", "MongoDB", "Express"],
   },
   {
-    title: "Library ",
+    title: "Library",
     image: "/images/library.png",
     link: "https://example.com/library-app",
     category: "Backend",
+    tech: ["Node.js", "Express", "MongoDB"],
   },
   {
     title: "E-commerce Platform (MERN)",
     image: "/images/ecommerce.png",
     link: "https://e-commers-phi-roan.vercel.app/",
     category: "Full Stack",
+    tech: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS"],
   },
   {
-    title: "Portfolio Website (React + TypeScript)",
+    title: "Portfolio Website ",
     image: "/images/protfolio.png",
     link: "https://my-portfolio-l3e8.vercel.app/",
     category: "Frontend",
+    tech: ["React", "TypeScript", "Framer Motion", "TailwindCSS"],
   },
   {
-    title: "online-school",
+    title: "Online School",
     image: "/images/online-madrasha.png",
     link: "https://darul-ihsan.vercel.app/",
     category: "Frontend",
+    tech: ["Next.js", "TailwindCSS", "TypeScript"],
   },
   {
     title: "REST API with Express & MongoDB",
     image: "/images/ilme-web.png",
     link: "https://numan-vai.vercel.app/",
     category: "Backend",
+    tech: ["Express", "MongoDB", "Node.js"],
+  },
+  {
+    title: "madrasha",
+    image: "/images/madrasha.png",
+    link: "https://al-jami-at-uloomil-madarisil-qawmiy-two.vercel.app/",
+    category: "frontend",
+    tech: ["HTML", "TailwindCSS", "javascript"],
   },
 ];
 
@@ -58,7 +72,7 @@ const Portfolio = () => {
       : allProjects.filter((p) => p.category === activeCategory);
 
   return (
-    <section className="container mx-auto px-6 py-24 bg-gradient-to-br from-[#fefce8] via-[#f0fdf4] to-[#ecfdf5] dark:from-[#1A2332] dark:via-[#1A2332] dark:to-[#1A2332]  text-foreground">
+    <section className="container mx-auto px-6 py-24 bg-gradient-to-br from-[#fefce8] via-[#f0fdf4] to-[#ecfdf5] dark:from-[#1A2332] dark:via-[#1A2332] dark:to-[#1A2332] text-foreground">
       {/* Title */}
       <motion.h2
         initial={{ y: 20, opacity: 0 }}
@@ -87,7 +101,7 @@ const Portfolio = () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 ">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
         {filteredProjects.map((project, index) => (
           <motion.div
             key={index}
@@ -117,9 +131,21 @@ const Portfolio = () => {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mt-4 px-4 pb-4">
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mt-4 px-4">
               {project.title}
             </h3>
+
+            {/* 🆕 Tech Stack */}
+            <div className="flex flex-wrap gap-2 px-4 pb-4 mt-2">
+              {project.tech.map((item, idx) => (
+                <span
+                  key={idx}
+                  className="text-xs font-medium px-2 py-1 bg-blue-100 dark:bg-gray-800 text-blue-700 dark:text-blue-300 rounded-md"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
           </motion.div>
         ))}
       </div>
