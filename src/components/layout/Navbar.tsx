@@ -42,7 +42,7 @@ const Navbar = () => {
             className="w-8 h-8 rounded-full"
           />
           <span className="text-2xl font-bold text-emerald-600 dark:text-emerald-400">
-            DMPortfolio
+            ANWAR
           </span>
         </Link>
 

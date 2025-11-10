@@ -14,7 +14,7 @@ const allProjects: Project[] = [
     title: "AB Seed Company",
     image: "/images/ab-seed.png",
     link: "https://ab-seed.vercel.app/",
-    category: "Full Stack",
+    category: "frontend",
     tech: ["react", "TailwindCSS", "typscript"],
   },
   {
@@ -22,13 +22,13 @@ const allProjects: Project[] = [
     image: "/images/library.png",
     link: "https://example.com/library-app",
     category: "Backend",
-    tech: ["Node.js", "Express", "MongoDB"],
+    tech: ["Node.js", "Express", "MongoDB", "Framer Motion"],
   },
   {
     title: "E-commerce Platform (MERN)",
     image: "/images/ecommerce.png",
     link: "https://e-commers-phi-roan.vercel.app/",
-    category: "Full Stack",
+    category: "frontend",
     tech: ["HTML", "React", "TailwindCSS", "RTK query"],
   },
   {
@@ -43,14 +43,14 @@ const allProjects: Project[] = [
     image: "/images/online-madrasha.png",
     link: "https://darul-ihsan.vercel.app/",
     category: "Frontend",
-    tech: ["Next.js", "TailwindCSS", "TypeScript"],
+    tech: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
   },
   {
     title: "REST API with Express & MongoDB",
     image: "/images/ilme-web.png",
     link: "https://numan-vai.vercel.app/",
     category: "Backend",
-    tech: ["Express", "MongoDB", "Node.js"],
+    tech: ["Next.js", "TailwindCSS", "TypeScript", "Framer Motion"],
   },
   {
     title: "madrasha",

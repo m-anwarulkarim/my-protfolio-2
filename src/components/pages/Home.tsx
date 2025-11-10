@@ -61,7 +61,7 @@ const Home = () => {
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
           <Button
-            onClick={() => window.open("https://wa.me/01602867954", "_blank")}
+            onClick={() => window.open("https://wa.me/8801602867954", "_blank")}
             className="px-6 py-2 text-base bg-emerald-600 hover:bg-emerald-700 text-white cursor-pointer"
           >
             Hire Me
